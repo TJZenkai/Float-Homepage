@@ -1,0 +1,190 @@
+
+/* Rectangle for early acess: */
+
+.navcontent {
+    padding-top: 25px;
+    padding-right: 30px;
+}
+
+.navbutton {
+    width: 200px;
+    height: 51px;
+    margin-bottom:15px;
+}
+
+#logo {
+  margin: 20px 20px 0px 0px;
+  width: 120px;
+  height: 72px;
+}
+
+.navbar-default {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-color: transparent;
+}
+
+.navbar-form {
+    margin: 0px;
+}
+
+#main-content {
+ padding: 90px 40px 30px 40px;
+ text-align: left;
+ margin-top:90px;
+}
+
+.btn {
+  border-radius: 5px;
+  font-family: AvenirNext-Regular;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight:normal;
+  background: #3DA5D1;
+  line-height: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border: none;
+  box-shadow: none;
+}
+
+.btn:visited, .btn:hover, .btn:active, .btn:focus {
+  background: #3799bf;
+  text-decoration: none;
+  color: #ffffff;
+
+}
+
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    padding-right:37px;
+}
+
+/* ABOUT             FA: */
+.navbar-default .navbar-nav>li>a {
+    font-family: AvenirNext-Regular;
+    font-size: 15px;
+    color: #3DA5D1;
+    line-height: 20px;
+    text-decoration: none 
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    text-decoration: none;
+    color: #2A8AB0;
+}
+
+/* Say hello to Float.: */
+h1 {
+  /*  position:absolute;
+    top:198.5px;
+    left:68px;*/
+    font-family: AvenirNext-Regular;
+    font-size: 48px;
+    font-weight:normal;
+    color: #000000;
+    letter-spacing: 0.38px;
+    line-height: 66px;
+    margin-bottom: 26px;
+}
+
+/* Credit, reinvented.: */
+h2 {
+    font-family: AvenirNext-UltraLight;
+    font-size: 24px;
+    font-weight: lighter;
+    color: #000000;
+    letter-spacing: 0.18px;
+    line-height: 34px;
+}
+
+/* Float is available n Copy: */
+p {
+    font-family: AvenirNext-UltraLight;
+    font-size: 16px;
+    color: #000000;
+    letter-spacing: 0.12px;
+    line-height: 22px;
+}
+
+    /* Rectangle 6 Copy 2: */
+input {
+    opacity: 0.75;
+    border: 1px solid #989898;
+    box-shadow: inset 0px 1px 3px 0px rgba(0,0,0,0.50);
+    border-radius: 4px;
+    width:427.17px;
+    height:46px;
+}
+
+/* Enter email address Copy: */
+input::-webkit-input-placeholder {
+    opacity: 0.75;
+    font-family: AvenirNext-UltraLight;
+    font-size: 17px;
+    color: #B2B2B2;
+    line-height: 22px;
+    text-align: center;
+}
+
+.plholder {
+    opacity: 1.00;
+    font-family: AvenirNext-UltraLight;
+    font-size: 17px;
+    color: #B2B2B2;
+    padding-left: 5px;
+    margin-bottom: 15px;
+}
+
+.GSbutton {
+    width: 427.17px;
+    height: 46px;
+    margin-bottom: 48px;
+}
+
+
+#footspace {
+    position: relative;
+    width: 100%;
+    height:306px;
+    background: #000000;
+}
+
+
+li a i {
+    padding-right: 93.5px;
+    color: #3DA5D1;
+}
+
+
+/*  Home    |    About : */
+li a {
+font-family: AvenirNext-UltraLight;
+font-size: 15px;
+color: #FFFFFF;
+line-height: 22px;
+}
+
+li a:visited, li a:hover, li a:active, li a:focus {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+}
+    
+/* Copyright      2015 : */
+#copyright {
+    text-align:center;
+    color: #FFFFFF;
+    font-size: 10.28px;
+    line-height: 22px;
+    margin:0px;
+    margin-right: 38px;
+}
+
