@@ -106,6 +106,11 @@ h2 {
     line-height: 34px;
 }
 
+.h2pos {
+    width:70%; 
+    margin-bottom: 30px;
+}
+
 /* Float is available n Copy: */
 p {
     font-family: AvenirNext-UltraLight;
@@ -113,6 +118,10 @@ p {
     color: #000000;
     letter-spacing: 0.12px;
     line-height: 22px;
+}
+
+.ppos {
+    margin-bottom: 42.5px;
 }
 
     /* Rectangle 6 Copy 2: */
@@ -176,6 +185,23 @@ line-height: 22px;
 li a:visited, li a:hover, li a:active, li a:focus {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.7);
+}
+
+.sm-foot {
+    text-align:center; 
+    margin-top:40px;
+    margin-left:100px;
+}
+
+.apl-foot {
+    text-align:center;  
+    margin-top:35px;
+    margin-right:35px;
+}
+
+.foot-menu {
+    text-align:center; 
+    margin:40px;
 }
     
 /* Copyright      2015 : */
