@@ -27,7 +27,7 @@
     margin: 0px;
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
     .h2post {
         width:70%; 
         margin-bottom: 30px;
@@ -223,6 +223,15 @@ li a:visited, li a:hover, li a:active, li a:focus {
     text-align:center;  
     margin-top:35px;
     margin-right:35px;
+}
+
+.apl-btn {
+    width: 156px;
+    height: 55px;
+    border: solid;
+    border-radius: 5px;
+    border-color: white;
+    border-width: 1px;
 }
 
 .foot-menu {
