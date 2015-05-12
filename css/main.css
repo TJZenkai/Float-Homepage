@@ -12,11 +12,6 @@
     margin-bottom:15px;
 }
 
-#logo {
-  margin: 21px 0px 0px 20px;
-  width: 89px;
-  height: 52px;
-}
 
 .navbar-default {
   background-color: rgba(255, 255, 255, 0.8);
@@ -34,6 +29,14 @@
     }
 }
 
+@media (min-width: 768px) {
+    #logo {
+        margin: 21px 0px 0px 20px;
+        width: 89px;
+        height: 52px;
+    }
+}
+
 @media (max-width: 992px) {
     .img-center {
         display: block;
@@ -48,14 +51,21 @@
     .h2post {
         width:100%; 
         margin-bottom: 30px;
-}
+    }
 }
 
 @media (max-width: 768px) {
+    .logo-mgn {
+        margin:0px 0px 0px 20px;
+        width: 89px;
+        height: 52px;
+    }
+    
     .sm-pad {
         padding-right: 0px;
     }
 }
+
 
 #main-content {
  padding: 90px 40px 30px 40px;
