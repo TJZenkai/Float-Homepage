@@ -1,0 +1,45 @@
+// Place all the styles related to the plaid controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.page-title {
+  font-size: 40px;
+  color: #535353;
+}
+.sub-title {
+  padding-top: 30px;
+  font-size: 14px;
+  line-height: 24px;
+}
+#signup-textbox {
+  max-width: 325px;
+  width: 90%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-family: 'Avenir Light', sans-serif;
+  font-weight: 100;
+  font-size: 30px;
+  text-align: center;
+  color: #43a6cf;
+  border-bottom: 1px solid #ededed;
+  border-radius: 0;
+  padding: 5px;
+  margin: 0 0 40px 0;
+  transition: all 0.5s ease;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+#signup-textbox:focus {
+  border-bottom: 1px solid #43a6cf;
+}
+.signup-btn {
+  margin: 10px 0 0 0;
+  max-width: 325px;
+  width: 90%;
+  border-radius: 12px;
+}
+.content {
+  padding-top: 50px;
+  padding-bottom: 0;
+}

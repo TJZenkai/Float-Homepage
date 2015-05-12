@@ -1,0 +1,26 @@
+<!-- NAVIGATION BAR -->
+<nav>
+  <div class="nav-container">
+
+    <div class="links-container">
+      <!-- <div class="nav-link" id="nav-link1"><%#= link_to "Home", root_path, 'data-no-turbolink' => true %></div> -->
+      <div class="nav-link" id="nav-link1"><%= link_to "ABOUT US", about_path, 'data-no-turbolink' => true %></div>
+      <div class="nav-link" id="nav-link2"><%= link_to "HOW IT WORKS", "/#howitworks", 'data-no-turbolink' => true %></div>
+      <div class="nav-link" id="nav-link3"><%= link_to "FAQ", faq_path, 'data-no-turbolink' => true %></div>
+      <!-- <div class="nav-link" id="nav-link2"><%#= link_to "about", about_path, 'data-no-turbolink' => true %></div> -->
+      <!-- <a href="http://medium.com/@Float" target="_blank" class="nav-link" id="nav-link3">blog</a> -->
+    </div>
+
+    <div class="logo-container">
+      <div id="logo">
+        <%= link_to image_tag("icons/logo-full.png"), root_path, 'data-no-turbolink' => true %>
+      </div>
+    </div>
+
+    <div class="signup-container">
+      <div id="nav-link4"><%= link_to "LOG IN", float_login_path, 'data-no-turbolink' => true %></div>
+    </div>
+
+  </div>
+</nav>
+<!-- END NAVIGATION BAR -->

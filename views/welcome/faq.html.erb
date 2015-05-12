@@ -1,0 +1,42 @@
+<!-- RENDER FLOAT ME MODAL -->
+<%= render partial: "layouts/modal/float_me_modal" %>
+
+<!-- RENDER NAV BAR -->
+<%= render partial: "layouts/nav/nav" %>
+
+<div class="content">
+  <!-- List All FAQ Questions -->
+<!--   <div class="questions-container">
+    <div class="questions">
+      <div class="list-title">
+        Frequently Asked Questions
+      </div>
+      <ol>
+        <%# @hash_response['faq'].each do |faq| %>
+          <a href="#<%#= faq['question'].delete(' ') %>"><li><%#= faq['question'] %></li></a>
+        <%# end %>
+      </ol>
+    </div>
+  </div> -->
+
+  <div class="answers-container">
+  <!-- Begin Answers Section -->
+    <% @hash_response['faq'].each do |faq| %>
+      <!-- Answer -->
+      <div class="answer" id=<%= faq['question'].delete(' ') %>>
+        <div class="answer-title"><%= faq['question'] %></div>
+          <div class="answer-body">
+            <% faq['answers'].each do |answer| %>
+              <p>
+                <%= answer %>
+              </p>
+            <% end %>
+          </div>
+        <div class="answer-footer">
+          <a href="#">[Back to Top]</a>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+

@@ -1,0 +1,26 @@
+<%= form_tag float_login_path, method: :post do %>
+
+  <%= text_field_tag :email,
+  params[:email],
+    :id => "signup-textbox",
+    :placeholder => "email",
+    :required => true %>
+
+    <br />
+
+  <%= text_field_tag :password,
+  params[:password],
+    :id => "signup-textbox",
+    :placeholder => "password",
+    :type => "password",
+    :minlength => 8,
+    :required => true %>
+
+  <div class="required">
+    Good to see you again :)
+  </div>
+
+  <br />
+
+  <%= submit_tag "Login", :class => "signup-btn" %>
+<% end %>

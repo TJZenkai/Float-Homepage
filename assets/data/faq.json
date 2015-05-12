@@ -1,0 +1,39 @@
+{
+  "faq" : [
+    {"question" : "What is float?",
+      "answers" : [
+      "Float, a digital banking platform designed for the hyper-connected, socially conscious consumer. Float offer a simple financing solution geared towards young consumers that can create and issue credit instantly."
+    ]},
+    {"question" : "What are you all about?",
+      "answers" : [
+      "Our vision at float is to create an open and transparent platform where consumers can feel good about whom they bank with. Were not about bleeding fees or bloated interest rates; were about creating innovative technology to improve the lives of our customers.",
+      "We exist to empower individuals to take control of their finances and improve their quality of life with innovative products and services on the mobile web."
+    ]},
+    {"question" : "Do you really offer 0% credit?",
+      "answers" : [
+      "That’s right! When you use our float VISA card, we stay true to our word by offering you 0% credit. This isn’t a promotional offering or special rate, this is 0% credit that is accessible anytime, anywhere."
+    ]},
+    {"question" : "How does Float make money if you don’t charge interest?",
+      "answers" : [
+      "When you swipe our float VISA card, the merchant pays a service fee (called interchange) to the issuing bank. Our partners split this revenue with us."
+    ]},
+    {"question" : "Do you offer a physical card?",
+      "answers" : [
+      "Yes, we will be issuing a physical card. We aim to be the easiest payment solution you use, everywhere you purchase. And while transactions are happening more and more online, card-present transactions still make up roughly 70% of all purchases.",
+      "Our Chip & PIN card is the security standard used by the majority of banks in Europe, which has shown to reduce card fraud from in-person transactions by up to 80%. It produces one time numbers for every retail transaction.",
+      "Our smart-card technology includes mobile control features that let you turn your physical card on or off, or even set an automated deactivation if the card is beyond a certain distance from your mobile device."
+    ]},
+    {"question" : "Does float check my credit score?",
+      "answers" : [
+      "Nope. Float believes that credit scores are antiquated and do not provide the right understanding of the young consumer. We solely rely on your current financial date to create your credit limits."
+    ]},
+    {"question" : "How does float calculate my credit limit?",
+      "answers" : [
+      "Think of it like the difference between how much you make and how much you spend. Float looks at your debt to income ratio to provide you with the amounts that are specifically geared towards you."
+    ]},
+    {"question" : "When will float be available?",
+      "answers" : [
+      "It is not yet fully available, but you can read more about how to get founding member status and other goodies by signing up early here!"
+    ]}
+  ]
+}

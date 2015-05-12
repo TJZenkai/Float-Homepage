@@ -1,0 +1,88 @@
+<style type="text/css">
+  .logo-container {
+    margin-top: -5px;
+    width: 0;
+  }
+  .ham-container {
+    padding-top: 15px;
+  }
+  #hamclose {
+    margin-top: 0;
+    font-size: 24px;
+  }
+  #nav-link4 {
+    color: white;
+    background-color: #77BFDE;
+  }
+</style>
+
+<!-- NAVIGATION BAR -->
+<nav>
+  <div class="nav-container">
+
+    <div class="logo-container">
+      <div id="logo">
+        <%= link_to image_tag("icons/logo-full.png"), root_path, 'data-no-turbolink' => true %>
+      </div>
+    </div>
+    <div class="links-container">
+      <div class="nav-link" id="nav-link1"><%#= link_to "Home", root_path, 'data-no-turbolink' => true %></div>
+      <div class="nav-link" id="nav-link1"><%#= link_to "How it Works", about_path, 'data-no-turbolink' => true %></div>
+      <div class="nav-link" id="nav-link1"><%#= link_to "Sign in", about_path, 'data-no-turbolink' => true %></div>
+    </div>
+
+    <div class="ham-container">
+      <div id="hambut">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+<!-- END NAVIGATION BAR -->
+
+
+<!-- MENU DIV CONTENT -->
+<div id="menu">
+<!-- ITEMS IN MENU -->
+  <div class="section" id="close-section"><div id="hamclose">&#10005;</div></div>
+  <div class="section">
+    <div class="nav-link" id="nav-link1"><%= link_to "home", root_path, 'data-no-turbolink' => true %></div>
+  </div>
+  <div class="section"><%= link_to "about", about_path, 'data-no-turbolink' => true, :class => "nav-link" %></div>
+  <div class="section"><a href="http://medium.com/@Float" target="_blank" class="nav-link" id="nav-link3">blog</a></div>
+  <div class="section">
+    <%= link_to 'Sign up', float_signup_path, :id => "nav-link4", :class => "nav-link" %>
+  </div>
+  <div class="section">
+    <%= link_to 'Login', float_login_path, :id => "nav-link4", :class => "nav-link" %>
+  </div>
+  <div class="section" id="socmed-section">
+    <span class="socmed">
+      <a href="http://twitter.com/hellofloat" id="twitter" target="_blank"><img src="assets/icons/socmed/twitter.png"></a>
+    </span>
+  </div>
+  <div class="section" id="socmed-section">
+    <span class="socmed">
+      <a href="http://facebook.com/hellofloat" id="facebook" target="_blank"><img src="assets/icons/socmed/facebook.png"></a>
+    </span>
+  </div>
+  <div class="section" id="socmed-section">
+    <span class="socmed">
+      <a href="http://instagram.com/hellofloat" id="instagram" target="_blank"><img src="assets/icons/socmed/instagram.svg"></a>
+    </span>
+  </div>
+</div>
+
+<script type="text/javascript">
+  //  CUSTOM HAMBURGER MENU
+  $("#hambut").click(function(){
+    $("#menu").animate({'width':'70%'},250);
+  });
+
+  $("#hamclose").click(function(){
+    $("#menu").animate({'width':'0px'},250);
+  });
+</script>

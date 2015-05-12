@@ -1,0 +1,40 @@
+<%= form_tag do %>
+
+  <%= text_field_tag :username,
+  params[:username],
+    :id  => "signup-textbox",
+    :placeholder => "banking username" %>
+
+    <br />
+
+  <%= text_field_tag :password,
+  params[:password],
+    :id  => "signup-textbox",
+    :placeholder => "banking password",
+    :type => "password",
+    :required => true %>
+
+  <% if @type == "usaa" %>
+
+    <br />
+
+    <%= text_field_tag :pin,
+    params[:pin],
+      :id  => "signup-textbox",
+      :placeholder => "pin",
+      :type => "password",
+      :required => true %>
+  <% end %>
+
+  <div class="disclaimer">
+    <!-- No hidden fees. Bank level security. -->
+    <div class="secure-container">
+      <div class="secure">
+        <img src="/assets/icons/lock-green-icon.png">
+        <div class="secure-text">Secure Sign Up</div>
+      </div>
+    </div>
+  </div>
+
+  <%= submit_tag "Login", :class => "btn" %>
+<% end %>

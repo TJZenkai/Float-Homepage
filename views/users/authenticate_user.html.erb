@@ -1,0 +1,17 @@
+<!-- RENDER NAV BAR -->
+<%= render partial: "layouts/nav/nav" %>
+
+<div class="content">
+  <div class="page-title">
+    Sign in to Float Account!
+  </div>
+
+  <div class="alert-error">
+    <%= flash[:notice] %>
+  </div>
+
+  <div class="container">
+    <%= render partial: "layouts/forms/login_form" %>
+  </div>
+
+</div>

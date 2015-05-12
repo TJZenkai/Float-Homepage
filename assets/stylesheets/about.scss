@@ -1,0 +1,221 @@
+/* About Page Style */
+
+/* Transparent Nav Bar Styling */
+#nav-transparent {
+  background-color: rgba(255,255,255,0);
+  position: absolute;
+
+  /* Nav Link Hover */
+  .nav-link:hover {
+    border-bottom: 1px solid #FFF;
+  }
+
+  /* Style Signup Nav Link */
+  #nav-link4 {
+    border: 1px solid #FFF;
+    border-radius: 5px;
+      transition: all 0.25s ease-in-out;
+      -moz-transition: all 0.25s ease-in-out; /* FF 4 */
+      -webkit-transition: all 0.25s ease-in-out; /* Safari & Chrome */
+      -o-transition: all 0.25s ease-in-out; /* Opera */
+  }
+  #nav-link4:hover {
+    color: #43a6cf;
+    background-color: #FFF;
+  }
+
+}
+
+#nav-transparent .links-container {
+  color: white;
+}
+
+/* Hero Styling */
+.hero-container {
+  height: 65vh;
+  background-color: white;
+}
+
+.hero-title {
+  position: absolute;
+  z-index: 2;
+  color:white;
+}
+
+.hero {
+}
+
+.about-hero-image {
+  background: url(/assets/other/about-hero.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-size: 100%;
+}
+
+/* Parallax Text Styling and Position */
+.hero-text {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-weight: 300;
+  font-size: 2em;
+  line-height: 2em;
+  padding-top: 25vh;
+  text-shadow: 2px 2px 2px #000;
+  -moz-text-shadow: 2px 2px 2px #000;
+  -webkit-text-shadow: 2px 2px 2px #000;
+}
+
+/* Slide Styling */
+.slide {
+  height: 0;
+  width: 100%;
+  background-color: white;
+}
+
+.container {
+  padding-top: 0;
+}
+
+/* About Us Slide Styling */
+#about-us {
+  height: 60vh;
+}
+
+#about-us .container {
+}
+
+#about-us .slide-title {
+  margin: 0 auto;
+  max-width: 95%;
+}
+
+#about-us .slide-body {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.5em;
+  margin: 0 auto;
+  width: 65%;
+}
+
+/* Contact Us Slide / Form Styling */
+#contact-us {
+  padding-top: 5%;
+  min-height: 35vh;
+}
+
+#contact-us .slide-title {
+  /*padding-bottom: 50px;*/
+}
+
+#contact-us .container {
+  /*padding-top: 45px;*/
+}
+
+#contact-text-box {
+  border: none;
+  outline: none;
+  height: 35px;
+  width: auto;
+  max-width: 500px;
+  background-color: transparent;
+  font-family: 'Avenir Light', sans-serif;
+  font-weight: 100;
+  font-size: 1.5em;
+  padding: 0 0 15px 15px;
+  border-left: 4px solid transparent;
+  color: #2e2e2e;
+  transition: all 0.5s ease;
+}
+#contact-text-box:focus {
+  border-left: 4px solid #43a6cf;
+  border-bottom: 0px solid transparent;
+}
+
+/* Text Area Styling */
+.text-area {
+  border: none;
+  outline: none;
+  height: 150px;
+  width: 500px;
+  background-color: transparent;
+  font-family: 'Avenir Light', sans-serif;
+  font-weight: 100;
+  font-size: 1em;
+  text-align: left;
+  padding: 5px 0 0 15px;
+  color: #2e2e2e;
+  border-left: 4px solid transparent;
+  transition: all 0.5s ease;
+  resize: none;
+  overflow: hidden;
+}
+.text-area:focus{
+  border-left: 4px solid #43a6cf;
+}
+
+#contactus-form .btn {
+  text-align: center;
+}
+
+/* Google Maps API iFrame */
+#map-canvas {
+  z-index:2;
+  height:45vh;
+  width:100%;
+  padding: 0;
+  border:0;
+  pointer-events:none;
+}
+
+  /**************************/
+ /**** IPHONE STYLING ******/
+/**************************/
+
+@media (max-width: 1024px){
+
+  #nav-transparent #hambut .bar{
+    background-color: white;
+  }
+  .hero-image {
+    width: auto;
+    background-size: 150%;
+  }
+
+  .hero-text {
+    font-size: 1em;
+    width: 100%;
+  }
+
+  .container {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  #about-us {
+    height: 75vh;
+  }
+
+  #about-us .container {
+    padding: 0;
+    margin-top: 25px
+  }
+
+  #about-us input, textarea {
+    border-radius: 0;
+  }
+
+  #about-us .section-title {
+    font-size: 2em;
+  }
+
+  #about-us .section-body {
+    margin-top: 50px
+  }
+
+  #contact-us .section-title {
+    font-size: 2em;
+  }
+
+}

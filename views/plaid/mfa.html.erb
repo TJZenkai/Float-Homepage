@@ -1,0 +1,34 @@
+<!-- RENDER NAV BAR -->
+<%= render partial: "layouts/nav/nav" %>
+
+<div class="content">
+  <div class="page-title">
+    Two Step Verification
+  </div>
+
+    <div class="sub-title">
+      <%= flash[:question] || flash[:message] %>
+    </div>
+
+    <div class="alert-error">
+      <%= flash[:notice] %>
+    </div>
+
+  <div class="container">
+    <%= form_tag do %>
+
+      <%= text_field_tag :challenge,
+      params[:challenge],
+        :id  => "signup-textbox",
+        :placeholder => "your response" %>
+
+      <br />
+
+      <%= submit_tag "Answer", :class => "btn" %>
+    <% end %>
+  </div>
+
+  <div class="disclaimer">
+    No hidden fees. Bank level security.
+  </div>
+</div>

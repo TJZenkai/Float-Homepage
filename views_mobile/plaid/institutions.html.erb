@@ -1,0 +1,80 @@
+<!-- RENDER NAV BAR -->
+<%= render partial: "layouts/nav/nav_mobile" %>
+
+<style type="text/css">
+  .column {
+    width: 500px;
+    display: inline-block;
+    border-right: 1px solid #ededed;
+  }
+  .sub-title {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .box {
+    display: inline-block;
+    height: 125px;
+    width: 125px;
+    padding: 10px;
+    border-bottom: 1px solid #ededed;
+  }
+  .institution {
+    height: 71px;
+    width: 71px;  
+    display: inline-block;
+    border-radius: 50%;
+    border: 4px solid #ededed;
+  }
+  .institution img {
+    height: 71px;
+    width: 71px;
+  }
+  .bank-name {
+    margin-top: 10px;
+    text-align: center;
+  }
+  .container {
+    padding: 25px;
+  }
+</style>
+
+<div class="content">
+  <div class="page-title">
+    Choose your bank.
+  </div>
+
+    <div class="sub-title">
+    This allows Float to determine how much<br />
+    interest-free credit you have available.<br />
+    Float does not store information and can not<br />
+    withdraw money from your account.
+  </div>
+
+  <div class="container">
+    <!-- List Banks -->
+    <% @list.each_with_index do |bank, index| %>
+      <% if index % 3 == 0 %><br /><% end %>
+      <div class="box">
+        <div class="institution">
+        <div id="" class="bank-info"></div>
+        <%= link_to image_tag("icons/banks/"+bank["type"]+".png"), bank_login_path(institution_id: bank["type"]) %>
+        </div>
+        <div class="bank-name">
+          <%= bank["name"] %>
+        </div>
+      </div>
+    <% end %>
+    <%#= submit_tag "Next", :class => "btn" %>
+  </div>
+
+  <div class="disclaimer">
+    No hidden fees. Bank level security.
+  </div>
+
+<script type="text/javascript">
+  // Change to border color of the selected bank
+  $('.institution').click(function(){
+    $(this).css({'border' : '4px solid #43a6cf'});
+    $('.institution').not($(this)).css({'border' : '4px solid #ededed'});
+  })
+</script>

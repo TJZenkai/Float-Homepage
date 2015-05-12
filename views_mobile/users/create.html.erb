@@ -1,0 +1,26 @@
+<!-- RENDER NAV BAR -->
+<%= render partial: "layouts/nav/nav_mobile" %>
+
+<style type="text/css">
+  #signup-textbox {
+    font-size: 16px;
+  }
+  .signup-btn {
+    width: 200px;
+  }
+</style>
+
+<div class="content">
+  <div class="page-title">
+    Let's get going!
+  </div>
+
+  <div class="alert-error">
+    <%= flash[:notice] %>
+  </div>
+
+  <div class="container">
+    <%= render partial: "layouts/forms/signup_form" %>
+  </div>
+
+</div>

@@ -1,0 +1,17 @@
+<!-- RENDER NAV BAR -->
+<%= render partial: "layouts/nav/nav_login" %>
+
+<div class="content">
+  <div class="page-title">
+    Let's get going!
+  </div>
+
+  <div class="alert-error">
+    <%= flash[:notice] %>
+  </div>
+
+  <div class="container">
+    <%= render partial: "layouts/forms/signup_form" %>
+  </div>
+
+</div>

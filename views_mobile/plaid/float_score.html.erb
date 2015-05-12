@@ -1,0 +1,138 @@
+<style type="text/css">
+  .logo-container {
+    margin-top: -5px;
+    width: 0;
+  }
+  .ham-container {
+    padding-top: 15px;
+  }
+  #hamclose {
+    margin-top: 0;
+    font-size: 24px;
+  }
+  #nav-link4 {
+    color: white;
+    background-color: #77BFDE;
+  }
+</style>
+
+<!-- NAVIGATION BAR -->
+<nav>
+  <div class="nav-container">
+
+    <div class="logo-container">
+      <div id="logo">
+        <%= link_to image_tag("icons/logo-full.png"), root_path, 'data-no-turbolink' => true %>
+      </div>
+    </div>
+    <div class="links-container">
+      <div class="nav-link" id="nav-link1"><%#= link_to "Home", root_path, 'data-no-turbolink' => true %></div>
+      <div class="nav-link" id="nav-link1"><%#= link_to "How it Works", about_path, 'data-no-turbolink' => true %></div>
+      <div class="nav-link" id="nav-link1"><%#= link_to "Sign in", about_path, 'data-no-turbolink' => true %></div>
+    </div>
+
+    <div class="ham-container">
+      <div id="hambut">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+<!-- END NAVIGATION BAR -->
+
+
+<!-- MENU DIV CONTENT -->
+<div id="menu">
+<!-- ITEMS IN MENU -->
+  <div class="section" id="close-section"><div id="hamclose">&#10005;</div></div>
+  <div class="section">
+    <div class="nav-link" id="nav-link1"><%= link_to "home", root_path, 'data-no-turbolink' => true %></div>
+  </div>
+  <div class="section"><%= link_to "about", about_path, 'data-no-turbolink' => true, :class => "nav-link" %></div>
+  <div class="section"><a href="http://medium.com/@Float" target="_blank" class="nav-link" id="nav-link3">blog</a></div>
+  <div class="section">
+    <%= link_to 'Logout', logout_path, :id => "nav-link4", :class => "nav-link" %>
+  </div>
+  <div class="section" id="socmed-section">
+    <span class="socmed">
+      <a href="http://twitter.com/hellofloat" id="twitter" target="_blank"><img src="assets/icons/socmed/twitter.png"></a>
+    </span>
+  </div>
+  <div class="section" id="socmed-section">
+    <span class="socmed">
+      <a href="http://facebook.com/hellofloat" id="facebook" target="_blank"><img src="assets/icons/socmed/facebook.png"></a>
+    </span>
+  </div>
+  <div class="section" id="socmed-section">
+    <span class="socmed">
+      <a href="http://instagram.com/hellofloat" id="instagram" target="_blank"><img src="assets/icons/socmed/instagram.svg"></a>
+    </span>
+  </div>
+</div>
+
+<script type="text/javascript">
+  //  CUSTOM HAMBURGER MENU
+  $("#hambut").click(function(){
+    $("#menu").animate({'width':'70%'},250);
+  });
+
+  $("#hamclose").click(function(){
+    $("#menu").animate({'width':'0px'},250);
+  });
+</script>
+
+
+<style type="text/css">
+  .content {
+    margin: 20px 0 0 0;
+  }
+  .container {
+    width: 80%;
+  }
+  .page-title {
+    color: #35D08B;
+    font-size: 80px;
+  }
+  .page-body {
+    margin: 0 auto;
+    max-width: 550px;
+    width: auto;
+    line-height: 24px;
+  }
+  .learn-more {
+    margin-top: 25px;
+  }
+  .btn.btn-exo {
+    background-color: transparent;
+    border: 2px solid #77BFDE;
+    color: #77BFDE;
+  }
+  .btn.btn-exo:hover {
+    background-color: #77BFDE;
+    color: #FFF;
+  }
+</style>
+
+<div class="content">
+  <div class="page-title">
+    $<%= @float_score %>.00
+  </div>
+
+  <div class="container">
+    <div class="page-body">
+      We're working with some of the most trusted banks in the world to create a new line of credit that's based on who you are and how you spend your money, not some credit score. If we could lend money right now, we'd lend you $<%= @float_score %>! We're in the process of getting approvals, and we're not promising anything. But, we'll let you know when we're open for business soon.
+    </div>
+  </div>
+
+  <div class="learn-more">
+    <%#= submit_tag "See What's Next", :class => "btn" %>
+  </div>
+
+  <div class="learn-more">
+    <%#= submit_tag "Learn More", :class => "btn btn-exo" %>
+  </div>
+
+</div>

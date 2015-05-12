@@ -1,0 +1,1046 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+/* Declare Custom Fonts */
+@font-face {
+  font-family: "Avenir Light";
+  src: url(/assets/avenir-light.otf) format("truetype");
+}
+
+@font-face {
+  font-family: "Bariol";
+  src: url(/assets/bariol.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Miso";
+  src: url(/assets/miso.otf) format("truetype");
+}
+
+html, body {
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Avenir Light', sans-serif;
+  font-weight: 300;
+}
+
+h1 {
+  font-family: 'Avenir Light', sans-serif;
+  font-weight: 100;
+}
+
+h2 {
+  font-family: 'Avenir Light', sans-serif;
+  font-weight: 100;
+}
+
+h3 {
+  font-family: 'Avenir Light', sans-serif;
+  font-weight: 100;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+  cursor: default;
+}
+
+  /******** BEGIN ***********/
+ /*   CUSTOM FORM STYLING  */
+/*                        */
+
+form input {
+}
+/* Place Holder Color */
+::-webkit-input-placeholder { /* WebKit browsers */
+  color:    #ECECEC;
+  transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color:    #ECECEC;
+  opacity:  1;
+  transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color:    #ECECEC;
+  opacity:  1;
+  transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color:    #ECECEC;
+  transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+form input:focus::-webkit-input-placeholder {
+  color:transparent;
+  transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+ /* FF 4-18 */
+form input:focus:-moz-placeholder {
+  color:transparent;
+  transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+ /* FF 19+ */
+form input:focus::-moz-placeholder {
+  color:transparent;
+  transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+ /* IE 10+ */
+form input:focus:-ms-input-placeholder {
+  color:transparent;
+  transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+/* Text Box Styling */
+.text-box {
+  border: none;
+  outline: none;
+  height: 35px;
+  width: 500px;
+  background-color: transparent;
+  font-family: 'Avenir Light', sans-serif;
+  font-weight: 100;
+  font-size: 1.5em;
+  text-align: center;
+  color: #2e2e2e;
+  border-bottom: 1px solid #77BFDE;
+  transition: all 0.5s ease;
+  padding: 5px;
+}
+.text-box:hover {
+  /*border-bottom: 1px solid #77BFDE;*/
+  transition: all 0.2s ease;
+}
+.text-box:focus{
+  border-bottom: 1px solid transparent;
+}
+
+/* BUTTON BTN CLASS */
+.btn {
+  margin: 0 auto;
+  z-index: 5;
+  border: none;
+  outline: none;
+  background-color: #43a6cf;
+  height: 60px;
+  width: 325px;
+  border-radius: 10px;
+  color: white;
+  font-family: 'Avenir Light', sans-serif;
+  font-size: 23px;
+  /*line-height: 62px;*/
+  cursor: default;
+  transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  /* No text Highlighting */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.btn:hover {
+  background-color: #6cb9d9;
+}
+.btn:active {
+  background-color: #339bc6;
+}
+
+/* Learn More Button */
+.learn-more-btn {
+  z-index: 2;
+  cursor: default;
+  margin: 0 auto;
+  width: 250px;
+  font-size: 0.5em;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 8px 35px 8px 35px;
+  background-color: rgba(255,255,255,0.25);
+  transition: all 0.2s ease;
+  text-shadow: 0px 0px 0px #000;
+  -moz-text-shadow: 0px 0px 0px #000;
+  -webkit-text-shadow: 0px 0px 0px #000;
+}
+
+.learn-more-btn:hover {
+  text-decoration: none;
+  background-color: rgba(255,255,255,0.35);
+}
+
+.learn-more-btn a {
+  text-decoration: none;
+}
+
+/* Button Icons */
+.btn-ico {
+  height: 40px;
+  vertical-align: middle;
+  margin-left: -20px;
+}
+
+.signup-btn {
+  margin: 0 auto;
+  z-index: 5;
+  border: none;
+  outline: none;
+  background-color: #43a6cf;
+  height: 60px;
+  width: 325px;
+  border-radius: 12px;
+  color: white;
+  font-family: 'Avenir Light', sans-serif;
+  font-size: 23px;
+  /*line-height: 62px;*/
+  cursor: default;
+  transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  /* No text Highlighting */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.signup-btn:hover {
+  background-color: #6cb9d9;
+}
+.signup-btn:active {
+  background-color: #339bc6;
+}
+
+  /*          END           */
+ /*   CUSTOM FORM STYLING  */
+/**************************/
+
+  /******** BEGIN ***********/
+ /* NAVIGATION BAR STYLING */
+/*                        */
+nav {
+  position: fixed;
+  top: 0;
+  z-index: 4;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(255,255,255,1);
+  overflow: hidden;
+    transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+}
+
+/* Navigation Link Styling */
+.nav-container {
+  position: relative;
+  width: 85%;
+  margin: 0 auto;
+  padding-top: 25px;
+}
+
+.links-container {
+  z-index: 2;
+  position: absolute;
+  display: inline-block;
+  margin: 25px 0 0 50px;
+  text-align: left;
+  left: 0;
+}
+
+.links-container a {
+  text-decoration: none;
+  color: #535353;
+  font-size: 18px;
+}
+
+.signup-container {
+  text-align: right;
+  display: inline-block;
+  right: 0;
+  text-align: right;
+}
+
+.nav-link {
+  display: inline;
+  cursor: default;
+  padding: 0 10px 0 10px;
+  margin: 0px 5px 0px 5px;
+  vertical-align: middle;
+  border-bottom: 1px transparent;
+  font-size: 1.167em;
+  font-weight: 100;
+}
+
+.nav-link:hover {
+  border-bottom: 1px solid #969494;
+}
+
+/* Style Signup Nav Link */
+#nav-link4 {
+  position: absolute;
+  right: 0;
+  color: #77BFDE;
+  padding: 15px 30px 12px 30px;
+  margin:  -5px 50px 0 0;
+  border: 2px solid #77BFDE;
+  border-radius: 5px;
+  font-size: 16px;
+  text-decoration: none;
+    transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out; /* FF 4 */
+    -webkit-transition: all 0.25s ease-in-out; /* Safari & Chrome */
+    -o-transition: all 0.25s ease-in-out; /* Opera */
+    /* No text Highlighting */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#nav-link4:hover {
+  color: white;
+  background-color: #77BFDE;
+  text-decoration: none;
+}
+
+/* Navigation Logo */
+.logo-container {
+  position: absolute;
+  display: inline-block;
+  height: auto;
+  width: 100%;
+  left: 0;
+}
+
+#logo {
+  margin: 10px 0 0 0;
+}
+
+#logo img {
+  height: 35px;
+}
+
+  /*          END           */
+ /* NAVIGATION BAR STYLING */
+/**************************/
+
+  /******** BEGIN ***********/
+ /*     FOOTER STYLING     */
+/*                        */
+
+footer {
+  bottom: 0;
+  z-index: 0;
+  width: 100%;
+  height: 10vh;
+  overflow: hidden;
+}
+
+footer p {
+  color: white;
+  margin-top: 35px;
+  font-family: 'Avenir Light', sans-serif;
+  font-weight: 100;
+  font-size: 0.75em;
+}
+
+/* Footer Link Styling */
+.footer-container {
+  margin-top: 25px;
+}
+
+.footer-links-container {
+  color: white;
+  margin: 25px 0 25px 0;
+  text-align: center;
+}
+
+.footer-link {
+  display: inline;
+  cursor: default;
+  padding: 10px;
+  vertical-align: middle;
+  font-size: 1.25em;
+  font-weight: 100;
+}
+
+.footer-link {
+  color: #43a6cf;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #43a6cf;
+  text-decoration: none;
+}
+
+/* SOCIAL MEDIA SECTION STYLING */
+.socmed {
+  font-size: 18px;
+  color: #43a6cf;
+}
+
+.socmed a {
+  padding: 50px;
+}
+
+.socmed img {
+  height: 30px;
+  width: 30px;
+  margin: 25px 0 0 0;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 50%;
+  transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+}
+
+.socmed img:hover {
+  /*background-color: #65c2c9;*/
+  border-radius: 0%;
+}
+
+#facebook {
+  padding: 0 25px 0 25px;
+}
+
+  /*          END           */
+ /*     FOOTER STYLING     */
+/**************************/
+
+.overlay-back {
+  overflow   : hidden;
+  position   : fixed;
+  top        : 0;
+  left       : 0;
+  width      : 100%;
+  height     : 100%;
+  background : #000;
+  opacity    : 0.65;
+  z-index: 5;
+  transition: background 0.25s ease-in-out;
+  -moz-transition: background 0.25s ease-in-out;
+  -webkit-transition: background 0.25s ease-in-out;
+  -o-transition: background 0.25s ease-in-out;
+}
+
+.blur {
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: -300px;
+  z-index: 1000;
+  left:0;
+  right:0;
+  border-radius: 15px;
+  margin-left:auto;
+  margin-right:auto;
+  width: 500px;
+  height: auto;
+  background-color: white;
+  text-align: center;
+  /* Box Shadow */
+  box-shadow: 0px 0px 18px 2px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 18px 2px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 0px 18px 2px rgba(0, 0, 0, 0.25);
+  /* Transition */
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+}
+
+.modal-title {
+  font-family: 'Avenir Light';
+  font-size: 2em;
+  font-weight: 300;
+  color: #2e2e2e;
+  font-weight: 300;
+  padding: 15px;
+}
+
+.modal-body-header {
+  padding: 25px 0 25px 0;
+  max-width: 375px;
+  margin: 0 auto;
+}
+
+.modal-body {
+  height: auto;
+  padding: 0 50px 50px 50px;
+}
+
+.modal-footer {
+  display: inline-block;
+  padding: 10px;
+  font-size: 1.5em;
+}
+
+.hidden { display: none; }
+
+/* Text Box Styling */
+#early-access-email {
+  text-align: center;
+  border: none;
+  outline: none;
+  height: 35px;
+  width: 260px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 200;
+  font-size: 1.25em;
+  color: #2e2e2e;
+  background-color: none;
+  padding: 5px;
+  transition: all 0.5s ease;
+}
+
+#close-modal {
+  text-align: right;
+  padding: 10px 20px 0 0;
+  cursor: default;
+  color: gray;
+}
+
+/* Continue button modal */
+.modal-btn {
+  display: inline-block;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  cursor: default;
+  min-width: 150px;
+  width: auto;
+  background-color: #43a6cf;
+  padding: 10px;
+  margin: 0 5px 0 5px;
+    transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out; /* FF 4 */
+    -webkit-transition: all 0.25s ease-in-out; /* Safari & Chrome */
+    -o-transition: all 0.25s ease-in-out; /* Opera */
+    /* No text Highlighting */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.modal-btn:hover {
+  background-color: #6cb9d9;
+}
+.modal-btn:active {
+  background-color: #339bc6;
+}
+
+/*flash*/
+
+.alert-error {
+margin: 0 auto;
+margin-top: 25px;
+margin-bottom: 25px;
+background-color: #f2dede;
+border-color: #eed3d7;
+color: #b94a48;
+text-align: center;
+max-width: 250px;
+}
+
+.alert-alert {
+margin: 0 auto;
+margin-top: 25px;
+background-color: #f2dede;
+border-color: #eed3d7;
+color: #b94a48;
+text-align: center;
+max-width: 250px;
+}
+
+.alert-success {
+margin: 0 auto;
+margin-top: 25px;
+background-color: #dff0d8;
+border-color: #d6e9c6;
+color: #468847;
+text-align: center;
+max-width: 250px;
+}
+
+.alert-notice {
+margin: 0 auto;
+margin-top: 25px;
+background-color: #dff0d8;
+border-color: #d6e9c6;
+color: #468847;
+text-align: center;
+max-width: 250px;
+}
+
+  /******** BEGIN ***********/
+ /*    IPHONE 6 STYLING    */
+/*                        */
+
+/* Vertical Styling */
+@media (max-width: 1024px){
+
+  html, body {
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    font-family: 'Avenir Light', sans-serif;
+    font-weight: 100;
+  }
+
+  /* HAMBURGER MENU CSS */
+  /* NAV BAR */
+  nav {
+    position: fixed;
+    background-color: rgba(255,255,255,0.85);
+    width: 100%;
+    height: 50px;
+    z-index: 800;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+
+    /* Mail Chimp Margin */
+    #mce-EMAIL {
+    margin-top: 0;
+  }
+
+  #mc_embed_signup div.mce_inline_error {
+    background-color: transparent;
+    border-color: rgba(214, 69, 65, 1);
+    color: #46a1ae
+  }
+
+  /* Navigation Link Styling */
+  .nav-container {
+    padding-top: 0px;
+  }
+
+  /* Navigation Logo */
+  #logo img {
+    height: 25px;
+    margin-top: 12px;
+  }
+
+  /* Hamburger Button */
+  .ham-container{
+    display: inline-block;
+    margin-right: -100%;
+    padding: 10px 0 0 0;
+    height: 40px;
+    width: 40px;
+  }
+
+  #hambut .bar{
+    height: 2px;
+    width: 20px;
+    background-color: gray;
+    margin: 6px 0 0 0;
+  }
+
+  #hambut:after{
+    .bar{background-color: #2e2e2e;}
+  }
+
+  #hamclose{
+    margin-left: -20px;
+    margin-top: -10px;
+    margin-left: -75%;
+    /*color: gray;*/
+    color: white;
+    cursor: default;
+    font-size: 2em;
+        -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }
+
+  #hamclose:hover{
+    /*color:#2e2e2e;*/
+    color: gray;
+  }
+
+  /* MENU */
+  #menu{
+    z-index: 900;
+    position: fixed;
+    top:0px;
+    right: 0;
+    width: 0px;
+    height: 120vh;
+    background-color: #262626;
+    overflow: hidden;
+  }
+
+  #menu .section {
+    cursor: default;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    padding-top: 15px;
+    color: white;
+  }
+
+  #menu #close-section {
+    height: 10px;
+  }
+
+  #socmed-section {
+    cursor: default;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    padding-top: 15px;
+    color: white;
+    /*margin-top: 25px;*/
+  }
+
+  /* Style Signup Nav Link */
+  #nav-link4 {
+    overflow: hidden;
+    width: 100px;
+    /*margin: 0 auto;*/
+  }
+
+  /* Remove iOS forced input styling */
+  input {
+      -webkit-appearance: none;
+      -webkit-border-radius:0; 
+      border-radius:0;
+  }
+
+  /* Text Box Styling */
+  .text-box {
+    border: none;
+    outline: none;
+    height: 35px;
+    width: 90%;
+    background-color: #efefef;
+    font-family: 'Avenir Light', sans-serif;
+    font-weight: 100;
+    font-size: 1em;
+    text-align: center;
+    border-radius: 50px;
+    border-bottom: 1px solid transparent;
+    transition: all 0.5s ease;
+    padding: 5px 0 5px 0;
+  }
+  .text-box:hover {
+    /*border-bottom: 1px solid #46a1ae;*/
+    transition: all 0.2s ease;
+  }
+  .text-box:focus{
+    border-bottom: 1px solid transparent;
+  }
+
+  /* BUTTON BTN CLASS */
+  .btn {
+    margin: 0 auto;
+    z-index: 5;
+    border: none;
+    outline: none;
+    background-color: #43a6cf;
+    height: 60px;
+    /*width: 125px;*/
+    border-radius: 10px;
+    color: white;
+    font-family: 'Avenir Light', sans-serif;
+    font-size: 18px;
+    /*line-height: 62px;*/
+    cursor: default;
+    transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    /* No text Highlighting */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .btn:hover {
+    background-color: #6cb9d9;
+  }
+  .btn:active {
+    background-color: #339bc6;
+  }
+
+  /* Modal */
+  .modal {
+    top:0;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+  }
+
+  .modal-title {
+    font-family: 'Avenir Light';
+    font-size: 2em;
+    font-weight: 300;
+    color: #2e2e2e;
+    font-weight: 300;
+    padding: 15px;
+  }
+
+  .modal-footer {
+    bottom: 0;
+    display: inline-block;
+    padding: 10px;
+    font-size: 1.5em;
+  }
+
+  .hidden { display: none; }
+
+  /* CONTENT STYLING */
+  .content {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 90px;
+    text-align: center;
+  }
+
+  /* Style Sizes */
+  .section {
+    height: auto;
+    width: 100%;
+  }
+
+  .mobile-container {
+
+  }
+
+  .section-text-container {
+    text-align: center;
+    width: 100%;
+  }
+
+  .section-text-body {
+    margin: 0 auto;
+    padding-bottom: 25px;
+    text-align: center;
+    width: 90%;
+    font-size: 0.5em;
+  }
+
+  #section1 {
+    margin: 75px 0 50px 0;
+  }
+
+  /* iPhone Section */
+  #section2 {
+    z-index: 4;
+    height: 100vh;
+  }
+
+  #section2 .mobile-iphone-screen {
+    margin: 0 auto;
+    width: 100%;
+    padding-top: 75px;
+    color: white;
+  }
+
+  #section2 .section-title {
+    padding-top: 20%;
+  }
+
+  #section2 .section-text-body {
+    width: 75%;
+  }
+
+  #section3 {
+    position: absolute;
+    z-index: 5;
+    height: 80vh;
+    width: 100%;
+    margin: -225px 0 0 0;
+    background-color: white;
+    box-shadow : 1px 1px 5px gray
+  }
+
+  #section3 .section-text-container {
+    margin-top: 75px;
+  }
+
+  /* float Card */
+  #section4 {
+    height: 80vh;
+    padding-top: 300px;
+  }
+
+  #section4 .section-text-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #section5 {
+    height: 60vh;
+  }
+
+    /******** BEGIN ***********/
+   /*    FLOAT CARD STYLE    */
+  /*                        */
+
+  .mobile-card-container {
+    width: 100%;
+  }
+
+  .mobile-card {
+    z-index: 2;
+    margin: 0 auto;
+    width: 300px;
+    height: 165px;
+    font-family: 'Miso';
+    /* Gradient */
+    background: #262626;
+    /* Rotation */
+    border: 3px solid #46a1ae;
+    border-radius: 15px;
+    color: #7accc8;
+  }
+
+  .mobile-card-logo-container {
+    text-align: left;
+  }
+
+  .mobile-card-logo img {
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  .mobile-card-number-container {
+    margin-top: 40px;
+    font-size: 1em;
+    letter-spacing: 5px;
+    color: #46a1ae;
+  }
+
+  .mobile-card-number {
+    line-height: 1em;
+  }
+
+  .visa-icon-container {
+    margin: 45px 0 0 0;
+  }
+
+  #visa-icon {
+    display: inline-block;
+    margin-left: 215px;
+  }
+
+  #rfid-icon {
+    display: inline-block;
+    margin: 5px;
+    opacity: 0.75;
+  }
+
+    /*          END           */
+   /*    FLOAT CARD STYLE    */
+  /**************************/
+
+    /******** BEGIN ***********/
+   /*        IPHONE         */
+  /*                        */
+  .mobile-iphone-container {
+  }
+
+  .mobile-iphone-body {
+    position: absolute;
+    z-index: 2;
+    margin: 0 auto;
+    width: 100%;
+      transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out; /* FF 4 */
+      -webkit-transition: all 0.5s ease-in-out; /* Safari & Chrome */
+      -o-transition: all 0.5s ease-in-out; /* Opera */
+  }
+
+  .mobile-iphone-body img {
+    z-index: 2;
+    width: 90%;
+  }
+
+  .mobile-iphone-screen {
+    z-index: 3;
+    position: absolute;
+    /*background: url(/assets/other/iPhone-screen.png);*/
+    height: 709px;
+    width: 345px;
+      transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out; /* FF 4 */
+      -webkit-transition: all 0.5s ease-in-out; /* Safari & Chrome */
+      -o-transition: all 0.5s ease-in-out; /* Opera */
+  }
+
+    /*          END           */
+   /*         IPHONE         */
+  /**************************/
+}

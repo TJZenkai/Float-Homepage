@@ -1,0 +1,5 @@
+<%= form_tag new_inquery_path, method: :post, :id => "contactus-form" do %><br />
+  <%= text_field_tag     :email_address, params[:email_address], :id => "contact-text-box", :placeholder => "your email" %><br />
+  <%= text_area_tag      :message, params[:message], :class => "text-area", :placeholder => "message" %>
+  <p><%= submit_tag "send", :class => "btn" %></p>
+<% end %>

@@ -1,0 +1,57 @@
+<%= form_tag float_signup_path, method: :post do %>
+
+  <%= text_field_tag :first_name,
+  params[:first_name],
+    :id    => "signup-textbox",
+    :placeholder => "First name" %>
+
+    <br />
+
+  <%= text_field_tag :last_name,
+  params[:last_name],
+    :id    => "signup-textbox",
+    :placeholder => "Last name" %>
+
+    <br />
+
+  <%= text_field_tag :age,
+  params[:age],
+    :id    => "signup-textbox",
+    :placeholder => "Age" %>
+
+    <br />
+
+  <%= text_field_tag :email,
+  params[:email],
+    :id => "signup-textbox",
+    :placeholder => "Email address",
+    :required => true %>
+
+    <br />
+
+  <%= text_field_tag :password,
+  params[:password],
+    :id => "signup-textbox",
+    :placeholder => "Create password",
+    :type => "password",
+    :minlength => 8,
+    :required => true %>
+
+  <div class="required">
+    All fields required.
+  </div>
+
+  <%#= text_field_tag :mobile_phone,
+  params[:mobile_phone],
+    :id    => "signup-textbox",
+    :placeholder => "phone number" %>
+
+  <%#= text_field_tag :time_zone,
+  params[:time_zone],
+    :id    => "signup-textbox",
+    :placeholder => "time_zone" %>
+
+    <br />
+
+  <%= submit_tag "Sign me up!", :class => "signup-btn" %>
+<% end %>

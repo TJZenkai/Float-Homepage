@@ -1,0 +1,142 @@
+<!-- RENDER NAV BAR -->
+<%= render partial: "layouts/nav/nav" %>
+
+<div class="hero">
+  <div class="hero-title">
+    Instant access to credit. <br />
+    No matter who you are.
+  </div>
+  <div class="hero-image">
+    <img src="assets/other/hero.jpg">
+  </div>
+</div>
+
+<!-- SLIDE ONE -->
+<div class="slide" id="slide1">
+  <!-- Blurb Section -->
+  <div class="blurb-container">
+    <!-- Blurb One -->
+    <div class="blurb">
+      <div class="blurb-title">FAIR.</div>
+      <div class="blurb-body">Credit scores are biased. We calculate<br />loans based on your current finances.</div>
+    </div>
+    <!-- Blurb Two -->
+    <div class="blurb">
+      <div class="blurb-title">FAST.</div>
+      <div class="blurb-body">Upon approval, we will immediately deposit<br />float credit into your existing debit card.</div>
+    </div>
+    <!-- Blurb Three -->
+    <div class="blurb">
+      <div class="blurb-title">EASY.</div>
+      <div class="blurb-body">Float is the fastest and simplest way to<br />get credit when you need it most.</div>
+    </div>
+  </div>
+  <!-- Reserve Invite Button (1) -->
+  <div class="btn-container">
+    <%= submit_tag "RESERVE YOUR INVITE", :class => "btn", :id => "early-access1" %>
+    <div class="disclaimer">
+      <div class="disclaimer-ico">
+        <img src="assets/icons/lock-gray-icon.png">
+      </div>
+      <div class="disclaimer-text">
+        Your information is always encrypted<br />and securely transmitted using SSL
+      </div>
+    </div>
+  </div>
+  <!-- Section Title -->
+  <div class="line-slide-gr">
+    <div class="slide-text-container">
+      <div class="slide-title">
+        “For anyone who wants a quick and fair <br />financial tool, float is here for you.”
+      </div>
+    </div>
+    <div class="slide-body">
+      <div class="header" id="howitworks">How does it work?</div>
+      <div class="arrow-icon">
+        <img src="assets/icons/down-arrow.png" height="16px">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Main Points -->
+<div class="line-slide">
+  <!-- Point One -->
+  <div class="point-container">
+    <div class="point">
+      <div class="point-title">Sign up with your bank.</div>
+      <div class="point-body">There’s no application, and no wait. Instantly take control of your financial picture.</div>
+    </div>
+  </div>
+</div>
+<!-- Point Two -->
+<div class="line-slide">
+  <div class="point-container">
+    <div class="point">
+      <div class="point-title">No credit score required.</div>
+      <div class="point-body">
+        We understand that getting credit is hard, so we’re simplifying the experience by looking beyond credit scores.
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Point Three -->
+<div class="line-slide">
+  <div class="point-container">
+    <div class="point">
+      <div class="point-title">Always credited, never promotional. </div>
+      <div class="point-body">
+        We offer 30 days, interest free. Get your money quickly and securely.
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Point Four -->
+<div id="last-slide">
+  <div class="point-container">
+    <div class="point">
+      <div class="point-title">Use float instantly.</div>
+      <div class="point-body">
+        For anyone sporting a VISA card, float credit can be immediately deposited into connected accounts, free of charge.
+        </div>
+    </div>
+  </div>
+</div>
+
+<!-- Reserve Invite Button (2) -->
+<div class="btn-container">
+  <%= submit_tag "FLOAT ME", :class => "btn", :id => "early-access2" %>
+</div>
+
+<!-- Coming Soon -->
+<div class="coming-soon">
+  <div class="app-container">
+    <img src="assets/icons/logo.png">
+    <div class="app-message">
+      Coming soon to iOS and Android.
+    </div>
+  </div>
+</div>
+
+<!-- RENDER FOOTER -->
+<%= render partial: "layouts/footer/footer" %>
+
+<script type="text/javascript">
+  // redirect to float beta
+  $(".btn").click(function(){
+    window.location.href = "/signup";
+  });
+  // Mix Pannel
+  // Nav Signup Button
+  mixpanel.track_links("#nav-link4 a", "clicked signup in nav link", {
+    "referrer": document.referrer
+  });
+  // Reserve Your Invite Button
+  mixpanel.track_links("#early-access1 input", "clicked 'reserve your invite' button", {
+    "referrer": document.referrer
+  });
+  // Float Me button
+  mixpanel.track_links("#early-access2 input", "clicked 'float me' button", {
+    "referrer": document.referrer
+  });
+</script>

@@ -1,0 +1,96 @@
+<!-- RENDER NAV BAR -->
+<%= render partial: "layouts/nav/nav_mobile" %>
+
+<div class="content">
+
+  <!-- VIDEO BANNER SECTION -->
+  <div class="hero-container">
+    <div class="hero">
+      <div class="hero-image">
+        <div class="hero-text">
+          <h1>About us</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END VIDEO BANNER SECTION -->
+
+
+  <!-- ABOUT US SECTION -->
+  <div class="section" id="about-us">
+    <div class="container">
+      <div class="section-title">
+        float is designing a new vision for banking in the 21st century.
+      </div>
+      <div class="section-body">
+        <p>We are a team of digital natives attempting to completely reinvent the banking experience with products that are simple, instant, and always accessible - anytime, anywhere.</p>
+      </div>
+    </div>
+  </div>
+  <!-- END ABOUT US SECTION -->
+
+  <!-- Google Maps Section -->
+  <div id="map-canvas"></div>
+
+  <!-- CONTACT US -->
+  <div class="section" id="contact-us">
+    <div class="container">
+      <div class="section-title">
+        Drop us a line
+      </div>
+      <div class="section-body">
+        <!-- RENDER CONTACT FORM -->
+        <%= render partial: "layouts/form_contact" %>
+      </div>
+    </div>
+  </div>
+  <!-- END CONTACT US -->
+
+</div><!-- End Content -->
+
+<!-- RENDER FOOTER -->
+<%= render partial: "layouts/footer/footer" %>
+
+<!-- JAVASCRIPT -->
+<script type="text/javascript">
+  // Button CSS   
+  $(".btn").css({
+    height: "auto",
+    padding: "15px 0 15px 0"
+  });
+  // Google Maps
+  var map;
+  function initialize() {
+    var mapOptions = {
+      center: {lat: 34.0621005, lng: -118.358164},
+      zoom: 15,
+      disableDefaultUI: true,
+      scroll:{x:$(window).scrollLeft(),y:$(window).scrollTop()}
+    };
+    map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+
+    // Define Marker
+    var marker = new google.maps.Marker({
+        position: {lat: 34.0621005, lng: -118.358164},
+        map: map,
+        title: 'float Inc.'
+    });
+
+    // Paralax Google Map
+    var offset=$(map.getDiv()).offset();
+    map.panBy(((mapOptions.scroll.x-offset.left)/3),((mapOptions.scroll.y-offset.top)/3));
+
+    google.maps.event.addDomListener(window, 'scroll', function(){
+      var scrollY=$(window).scrollTop(),
+      scrollX=$(window).scrollLeft(),
+      scroll=map.get('scroll');
+      if(scroll){
+        map.panBy(-((scroll.x-scrollX)/3),-((scroll.y-scrollY)/3));
+      }
+      map.set('scroll',{x:scrollX,y:scrollY})
+    });
+  }
+  google.maps.event.addDomListener(window, 'load', initialize);
+
+</script>
