@@ -13,9 +13,9 @@
 }
 
 #logo {
-  margin: 20px 20px 0px 0px;
-  width: 120px;
-  height: 72px;
+  margin: 21px 0px 0px 20px;
+  width: 89px;
+  height: 52px;
 }
 
 .navbar-default {
@@ -25,6 +25,36 @@
 
 .navbar-form {
     margin: 0px;
+}
+
+@media (max-width: 1200px) {
+    .h2post {
+        width:70%; 
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    .img-center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .txt-center {
+        text-align: center;
+    }
+    
+    .h2post {
+        width:100%; 
+        margin-bottom: 30px;
+}
+}
+
+@media (max-width: 768px) {
+    .sm-pad {
+        padding-right: 0px;
+    }
 }
 
 #main-content {
@@ -106,10 +136,6 @@ h2 {
     line-height: 34px;
 }
 
-.h2pos {
-    width:70%; 
-    margin-bottom: 30px;
-}
 
 /* Float is available n Copy: */
 p {
